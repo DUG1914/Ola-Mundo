@@ -1,0 +1,13 @@
+label {
+    width: 80px;
+    display: inline-block;
+    height: 25px;
+ }
+ 
+ 
+ .titulo-colorido {
+     color: cornflowerblue;
+     font-family: Arial;
+     font-size: x-large;
+     
+ }
