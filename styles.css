@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inconsolata&family=Poppins:wght@300;400;500&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -28,7 +29,7 @@ body {
 
 .box {
   display: flex;
-  width: 830px;
+  width: 930px;
 }
 
 .logo-mario {
@@ -39,8 +40,8 @@ body {
   border-radius: 20px 0 0 20px;
 }
 
-.logo-mario img{
-   width: 100%;
+.logo-mario img {
+  width: 90%;
 }
 
 .formulario {
@@ -109,21 +110,25 @@ form .input-group button {
   cursor: pointer;
   font-size: 16px;
 }
+
 /*Essa é a parte que deixa o site responsivo*/
 @media (max-width:930) {
-  .logo-mario{
+  .logo-mario {
     display: none;
   }
+
   .box {
     width: 700px;
   }
+
   .formulario {
     width: 100%;
-    border-radius: 20px; 
+    border-radius: 20px;
   }
 }
+
 @media (max-width:500%) {
-  .w34{
+  .w34 {
     width: 100%;
     padding: 0;
   }
