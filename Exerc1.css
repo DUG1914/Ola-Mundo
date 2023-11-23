@@ -1,73 +1,130 @@
-body {
-  margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inconsolata&family=Poppins:wght@300;400;500&display=swap');
+* {
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-
+  font-family: 'Anton', sans-serif;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Poppins', sans-serif;
 }
 
-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+body {
+  background-image: url("img/wallhaven-9dryjx_3840x3072.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
 }
 
+.w34 {
+  width: 50%;
+  float: left;
+  padding-right: 15px;
+}
+
+.box {
+  display: flex;
+  width: 830px;
+}
 
 .logo-mario {
+  width: 50%;
+  display: flex;
+  align-items: center;
   padding: 20px;
-  margin: 20px;
-  margin-top: 15em;
-  
+  border-radius: 20px 0 0 20px;
 }
 
-.paragrafo-logo {
-  color: #ffffff;
-  margin: 25px;
-  margin-top: -2em;
-  background-color: #0000008f;
-  width: 370px;
+.logo-mario img{
+   width: 100%;
 }
 
 .formulario {
-  margin-top: -18em;
-  margin-left: 45em;
-  width: 350px;
-  padding: 8px;
-  border-top: 10px solid red;
   background-color: red;
-  border-left: 10px solid red;
-  border-right: 10px solid red;
-  border-bottom: 10px solid red;
+  backdrop-filter: blur(40px);
+  padding: 30px 40px;
+  width: 50%;
+  border-radius: 0 20px 20px 0;
 }
 
-
-.titulo-colorido {
-  color: rgb(0, 0, 0);
-  font-family: Arial;
-  font-size: x-large;
-  margin: 10px;
-
+.formulario h2 {
+  font-size: 30px;
 }
 
-label {
-  width: 80px;
-  display: inline-block;
-  height: 25px;
-  
+.formulario p {
+  font-weight: bold;
+  color: rgb(231, 228, 13);
 }
 
+.formulario p a {
+  color: rgb(24, 24, 243);
+  text-decoration: none;
+}
 
-button {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 6px;
-  border: darkred;
+.formulario form {
+  margin: 20px 0;
+}
+
+form .input-group {
+  margin-bottom: 15px;
+}
+
+form .input-group label {
+  color: black;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+form .input-group input {
+  width: 100%;
+  height: 47px;
+  background-color: rgb(red, green, blue);
+  border-radius: 20px;
+  outline: none;
+  border: 2px solid transparent;
+  padding: 15px;
+  font-size: 15px;
+  color: #616161;
+  transition: all 0.4s ease;
+}
+
+form .input-group input:focus {
+  border-color: rgb(162, 0, 255);
+}
+
+form .input-group button {
+  width: 100%;
+  height: 47px;
+  background: rebeccapurple;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  margin-top: 15px;
+  color: white;
   cursor: pointer;
+  font-size: 16px;
 }
-
-.img-mario {
-  margin-left: 50em;
+/*Essa é a parte que deixa o site responsivo*/
+@media (max-width:930) {
+  .logo-mario{
+    display: none;
+  }
+  .box {
+    width: 700px;
+  }
+  .formulario {
+    width: 100%;
+    border-radius: 20px; 
+  }
+}
+@media (max-width:500%) {
+  .w34{
+    width: 100%;
+    padding: 0;
+  }
 }
