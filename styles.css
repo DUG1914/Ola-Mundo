@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-  background: radial-gradient(circle, rgba(0,223,164,1) 5%, rgba(0,60,49,1) 74%);
+    background: linear-gradient(90deg, rgb(190, 169, 202) 0%, rgba(29,253,220,1) 50%, rgba(69,252,139,1) 100%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,7 +34,7 @@ body{
     border-radius: 20px  0 0 20px;
 }
 .img-box img{
-    width: 70%;
+    width: 90%;
 }
 .form-box{
     background-color: rgba(255, 255, 255, 0.4);
