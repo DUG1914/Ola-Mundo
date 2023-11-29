@@ -1,54 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt.br">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário para cadastro</title>
     <link rel="stylesheet" href="styles.css">
-
+    <title>Formulario responsivo com html e css</title>
 </head>
 
 <body>
-    <strong>
-        <div class="formulario">
-            <h2>Criar conta</h2> 
-            <p>Já é um membro? <a href="https://www.google.com.br/"> Login </a></p>
-            <form action="processar_formulario.php" method="post">
-
+    <div class="box">
+        <div class="img-box">
+            <img src="img/Canarinho Brasil Mascote 1.png">
+        </div>
+        <div class="form-box">
+            <h2>Criar Conta</h2>
+            <p> Já é um membro? <a href="#"> Login </a> </p>
+            <form action="#">
                 <div class="input-group">
-                    <label for="nome">Nome</label>
-                    <input type=text id="nome" nome="nome" placeholder="Digite seu nome" required>
+                    <label for="nome"> Nome Completo</label>
+                    <input type="text" id="nome" placeholder="Digite o seu nome completo" required>
                 </div>
 
                 <div class="input-group">
-                    <label for="E-mail">E-mail</label>
-                    <input type=text id="e-mail" nome="e-mail" placeholder="Digite seu e-mail" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Digite o seu email" required>
                 </div>
 
                 <div class="input-group">
-                    <label for="Documento">Telefone</label>
-                    <input type=text id="telefone" nome="telefone" placeholder="Digite seu telefone" required>
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" placeholder="Digite o seu telefone" required>
                 </div>
 
-                <div class="input-group w34">
+                <div class="input-group w50">
                     <label for="senha">Senha</label>
-                    <input type=password id="senha" nome="senha" placeholder="Digite sua senha" required>
+                    <input type="password" id="senha" placeholder="Digite sua senha" required>
                 </div>
 
-                <div class="input-group w34">
-                    <label for="confirmarsenha">Confirmar senha</label>
-                    <input type=password id="confirmarsenha" nome="confirmarsenha" placeholder="Confirmar senha"
-                        required>
+                <div class="input-group w50">
+                    <label for="Confirmarsenha">Confirmar Senha</label>
+                    <input type="password" id="Confirmarsenha" placeholder="Confirme a senha" required>
                 </div>
-    </strong>
-    <div class="input-group">
-        <button><strong>Cadastrar</strong></button>
-    </div>
-    </div>
-    </form>
+
+                <div class="input-group">
+                    <button>Cadastrar</button>
+                </div>
+
+            </form>
+        </div>
     </div>
 </body>
-
 </html>
